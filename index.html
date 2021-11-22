@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html><head>  <meta charset="UTF-8">
 	<title>students</title>
-	
+</head>
+<body style='margin-left: 30px;'>
+
+    <h1>CIT7 Students</h1>
+    <p>CIT7 students: &nbsp;Exam 1 Scores</p>
+        
+    <input type="button" id='btn' value="Get Student Scores">
+             
+ 	<div id="result"></div>
+
+ 	<p> Example of the JSON data structure this Ajax request returns:&nbsp; an array of student objects.
+    <pre><strong>[
+ {"name":"Alice","midterm":95,"final":97},
+ {"name":"Bryan","midterm":68,"final":80}
+]
+ 	</strong></pre></p>
 <script>
    
     document.addEventListener('DOMContentLoaded', function() {      // when page has loaded, more or less
@@ -35,24 +50,7 @@
 	
   });
    
-</script>
-</head>
-<body style='margin-left: 30px;'>
-
-    <h1>CIT7 Students</h1>
-    <p>CIT7 students: &nbsp;Exam 1 Scores</p>
-        
-    <input type="button" id='btn' value="Get Student Scores">
-             
- 	<div id="result"></div>
-
- 	<p> Example of the JSON data structure this Ajax request returns:&nbsp; an array of student objects.
-    <pre><strong>[
- {"name":"Alice","midterm":95,"final":97},
- {"name":"Bryan","midterm":68,"final":80}
-]
- 	</strong></pre></p>
-   
+</script>	
    
 </body>
 </html>
